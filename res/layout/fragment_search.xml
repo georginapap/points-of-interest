@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollViewSearch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:scrollbars="horizontal" >
+
+		<LinearLayout
+		    style="@color/salmon"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/medium"
+		    android:focusableInTouchMode="true"
+		    android:id="@+id/linearSearch"
+		    android:orientation="vertical" >
+			
+		    <TextView
+		        android:id="@+id/types_of_poi"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="26dp"
+		        android:text="@string/searchpoiType"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:textStyle="bold" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_other"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/other_option"
+		        android:textStyle="bold|italic" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_entertainment"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/entertainment_option"
+		        android:textStyle="bold|italic" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_drink"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/drink_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_cinema"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/cinema_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_seeing"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/seeing_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_education"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/education_option"
+		        android:textStyle="bold|italic" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_library"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/library_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_university"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/university_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_food"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/food_option"
+		        android:textStyle="bold|italic" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_fastfood"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fastfood_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_takeaway"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/takeaway_option" />
+
+		    <CheckBox
+		        android:id="@+id/checkBox_typical"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/typical_option" />
+
+		    <Button
+		        android:id="@+id/button_search_my"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/SearchMyPois"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:textStyle="bold" />
+
+		    <Button
+		        android:id="@+id/button_search_other"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="117dp"
+		        android:layout_height="wrap_content"
+		        android:text="@string/SearchOthersPois"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:textStyle="bold" />
+
+		    <Button
+		        android:id="@+id/button_search_all"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/SearchAllPois"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:textStyle="bold" />
+
+
+		 
+
+			<TextView android:layout_height="0dip" 
+			    android:layout_width="fill_parent" 
+			    android:id="@+id/textmap" 
+			    android:textColor="@android:color/holo_blue_light" 
+			    android:text="@string/title_activity_map" 
+			    android:textSize="20sp" 
+			    android:textAppearance="?android:attr/textAppearanceSmallPopupMenu" 
+			     android:maxLines="60" 
+			     android:layout_weight="0.39"
+			    android:gravity="center_horizontal"/>
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:scrollbars="vertical" >
+
+		        <fragment
+		            android:id="@+id/map"
+		            android:layout_width="match_parent"
+		            android:layout_height="400dp"
+		            class="com.google.android.gms.maps.SupportMapFragment" />
+		    </RelativeLayout>
+		</LinearLayout>
+
+
+ </ScrollView>
+

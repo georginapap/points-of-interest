@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/medium"
+  android:focusableInTouchMode="true"
+  android:orientation="vertical" >
+
+        
+
+        <ListView
+            android:id="@+id/infoV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttondeleteInfoV"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/buttondelete"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <ListView
+            android:id="@+id/infoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttondeleteInfoP"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/buttondelete"
+            android:textColor="@android:color/holo_blue_light" />
+        
+</LinearLayout>

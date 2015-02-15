@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/medium"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/PoiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/poiType"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="@string/PoiName"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poiType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PoiName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/poiType"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/poi_spinner"
+            style="android:spinnerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poiType"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/types" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="49dp"
+            android:background="@color/medium"
+            android:text="@string/InsertPoi"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

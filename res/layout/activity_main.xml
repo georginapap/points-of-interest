@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+  	android:background="@color/medium"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+    
+<EditText
+    android:id="@+id/editext2Homepg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editext1Homepg"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="29dp" 
+    android:ems="10"
+    android:hint="@string/password"
+    android:inputType="textPassword"
+	android:textColor="@android:color/holo_blue_light"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/buttonHomepg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/editext1Homepg"
+    android:layout_alignRight="@+id/editext2Homepg"
+    android:layout_below="@+id/editext2Homepg"
+    android:layout_marginTop="17dp"
+    android:text="@string/signInHome"
+    android:textColor="@android:color/holo_blue_light" 
+    android:textStyle="bold"/>
+
+<Button
+    android:id="@+id/buttonNewAcc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/signUpHome"
+ 	android:textColor="@android:color/holo_blue_light"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/editext1Homepg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/editext2Homepg"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="33dp"
+    android:ems="10"
+    android:hint="@string/username"
+    android:inputType="textPersonName"
+    android:textColor="@android:color/holo_blue_light"
+    android:textStyle="bold" />
+  
+</RelativeLayout>

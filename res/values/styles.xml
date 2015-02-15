@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+  </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+   <color name="opaque_red">#f00</color>
+   <color name="translucent_red">#80ff0000</color>
+    <color name="medium">#484D46	</color>
+     <color name="pink">#8B8378	</color>
+  <color name="salmon">#6F4242</color>
+   <color name="brown">#A62A2A</color>
+    
+</resources>
